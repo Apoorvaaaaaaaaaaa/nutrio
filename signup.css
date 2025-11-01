@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #38ef7d, #11998e); /* Green gradient background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #38ef7d;
+  outline: none;
+}
+
+.password-toggle {
+  position: relative;
+}
+
+.password-toggle .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #000; /* Black color for eye icon */
+}
+
+.password-toggle .toggle-password:hover {
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  display: none; /* Hidden by default */
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(90deg, #38ef7d, #11998e);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #2dcf6b, #0d8064);
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+p a {
+  color: #11998e;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Success message styling */
+.success-message {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+
+.success-message i {
+  margin-right: 10px;
+  color: #38ef7d; /* Green color for the checkmark */
+}

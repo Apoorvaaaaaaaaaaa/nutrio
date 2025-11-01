@@ -1,0 +1,142 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #38ef7d, #11998e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+/* Input and Icon */
+.input-with-icon {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+input[type="password"] {
+    flex-grow: 1; /* Make the input field take up most of the space */
+  }
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    padding-right: 40px; /* Reserve space for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #38ef7d;
+    outline: none;
+}
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    width: 24px; /* Fixed width for the icon */
+  }
+  input[type="password"] {
+    padding-right: 30px; /* Adjust as needed */
+  }
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(90deg, #38ef7d, #11998e);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: linear-gradient(90deg, #2dcf6b, #0d8064);
+}
+/* Links */
+p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+p a {
+    color: #11998e;
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Modal for Success Message */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Keep it on top of other elements */
+  }
+  
+  .modal-content {
+    background: transparent; /* No background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: none; /* Remove box shadow */
+  }
+  
+  /* Optional: Add some padding to the icon */
+  .modal-content i {
+    margin-bottom: 10px; /* Add space below the icon */
+    font-size: 3rem; /* Adjust icon size if needed */
+    color: green; /* Color for the tick mark */
+  }
+
+  .success-message {
+    color: green; /* Change this to your preferred color */
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between message and form */
+  }
+  

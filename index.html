@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Nutrition Plan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Section -->
+  <nav>
+    <div class="logo">Fitness Nutrition Plan</div>
+    <ul class="nav-links">
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#about" class="inactive-link">About</a></li> <!-- About link retained but set inactive -->
+      <li><a href="#courses-section">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="signup.html" class="signup-btn"><i class="fa-solid fa-user"></i> Sign up</a>
+      <span class="divider">|</span>
+      <a href="login.html" class="login-btn">Log in</a>
+    </div>
+    
+  </nav>
+  <!-- Main Hero Section -->
+  <section id="hero-section" class="hero">
+    <div class="hero-content">
+      <h1>Let's get <span>fit & healthy</span> together.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </section>
+  <!-- Divider between sections -->
+  <div class="divider-section"></div>
+ <!-- Courses Section -->
+<section id="courses-section">
+  <div class="card-container">
+    <!-- First Row -->
+    <div class="card">
+      <img src="image1.jpeg" alt="Healthy Meals Tips">
+      <div class="card-overlay">
+        <h3>Healthy Meals Tips</h3>
+      </div>
+    </div>
+    <!-- <button class="card" onclick="redirectToPage()">
+      <img src="image1.jpeg" alt="Healthy Meals Tips">
+      <div class="card-overlay">
+        <h3>Healthy Meals Tips</h3>
+      </div>
+    </button> -->
+    
+    <div class="card">
+      <img src="image2.jpg" alt="Recipes Idea">
+      <div class="card-overlay">
+        <h3>Nutrition Counter</h3>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image3.jpg" alt="Workout Plans">
+      <div class="card-overlay">
+        <h3>Workout Plans</h3>
+      </div>
+    </div>
+    <!-- Second Row -->
+    <!-- <div class="card">
+      <img src="image4.jpg" alt="Mindful Eating">
+      <div class="card-overlay">
+        <h3>Mindful Eating</h3>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image5.jpg" alt="Nutrition Guides">
+      <div class="card-overlay">
+        <h3>Nutrition Guides</h3>
+      </div>
+    </div>
+    <div class="card">
+      <img src="image6.jpg" alt="Fitness Challenges">
+      <div class="card-overlay">
+        <h3>Fitness Challenges</h3>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="content">
+    <h2>Contact Us ♥</h2>
+  </div>
+  <div class="container">
+    <div class="contactInfo">
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="text">
+          <h3>Address</h3>
+          <p>Chitravathi road,<br>Puttaparthi, Andhra Pradesh,<br>515134</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="text">
+          <h3>Phone Number</h3>
+          <p>1234567892</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="text">
+          <h3>Email</h3>
+          <p>fitnessnutrition@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contactForm">
+      <form id="contact-form" action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+        <h2>Send Message</h2>
+        <div class="inputBox">
+          <input type="text" id="name" placeholder="Full Name" name="name" required>
+        </div>
+        <div class="inputBox">
+          <input type="email" id="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="inputBox">
+          <textarea id="message" placeholder="Type your message here" name="message" required></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send">
+        </div>
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+      <!-- Success Message -->
+      <div id="success-message" class="success-message" style="display: none; text-align: center;">
+        <i class="fa fa-check-circle" aria-hidden="true" style="color: green; font-size: 2em;"></i>
+        <p>SENT SUCCESSFULLY</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Fitness Nutrition Plan. All rights reserved.</p>
+  </footer>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #66bb6a, #388e3c);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Container for the form */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px; /* Allow more width for the entire container */
+    box-sizing: border-box;
+}
+/* Form title styling */
+.form-content h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #388e3c;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Form group styling */
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+/* Label styling */
+.form-group label {
+    width: 30%; /* Reduced label width to allow input fields more space */
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin-left: 10px; /* Move labels to the right */
+}
+/* Input and select field styling */
+.form-group input,
+.form-group select {
+    flex-grow: 1; /* Input fields now grow to fill remaining space */
+    max-width: none; /* Remove any constraints on width */
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    min-width: 70%; /* Ensure all fields have a consistent minimum width */
+}
+/* Focus styles */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #388e3c;
+    outline: none;
+}
+/* Read-only input styling */
+.form-group input[readonly] {
+    background-color: #dcdcdc;
+    color: #555;
+    cursor: not-allowed;
+}
+/* Button styling */
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+/* Hover effect for button */
+.btn:hover {
+    background: #2c6f2e;
+}
+
+/* Success message styling */
+.success-message {
+    color: green;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.success-message .checkmark {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
